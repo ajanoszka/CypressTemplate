@@ -1,19 +1,19 @@
-describe('TEST DESCRIPTION HERE', () => {
+describe('TEST OF www.phptravels.net SITE', () => {
+
+    before('CHECK ENV VARIABLES', () => {
+      expect(Cypress.env()).to.include.keys('Url', 'Username', 'Password')
+    })
 
     it('CHECK ENV VARIABLES', () => {
       expect(Cypress.env()).to.include.keys('Url', 'Username', 'Password')
     })
   
-    it('FIRST TEST CASE DESCRIPTION', () => {
+    it('VISIT MAIN PAGE', () => {
         cy.visit(Cypress.env('Url'))
     })
   
-    // it('SECOND TEST CASE DESCRIPTION', () => {
-
-    // })
-  
-    // it('THIRD TEST CASE DESCRIPTION', () => {
-
-    // })
+    it('SEARCH FOR FLIGHT', () => {
+        cy.findFlight()
+    })
 })
   
