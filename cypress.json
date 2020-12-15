@@ -1,0 +1,8 @@
+{
+    "video": false,
+    "env": {
+      "Url": "https://www.phptravels.net/",
+      "Username": "user@phptravels.com",
+      "Password": "demouser"
+    }
+  }
